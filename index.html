@@ -1,1 +1,87 @@
-Hello World
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+	<title>Karla's Online Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta property="og:title" content="Karla's Online Portfolio" />
+  	<meta property="og:description" content="Online portfolio displaying various web projects" />
+  	<meta property="og:url" content="https://knaguilar.github.io/online-portfolio/" />
+  	<meta property="og:image" content="hhttps://knaguilar.github.io/online-portfolio/portfolio_thumbnail.jpg" />
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="lib/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/css/scrolling-nav.css">
+	<link rel="stylesheet" href="parallax.css">
+	<link async href="https://fonts.googleapis.com/css?family=Bad+Script|Dosis" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".navbar">
+	<div class="container-fluid">
+		<!-- TODO: color links: active, hover, etc -->
+		<nav class="navbar navbar-fixed-bottom" role="navigation">
+			<button type="button" data-toggle="collapse" class="navbar-toggle collapsed" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a class="page-scroll" href="#welcome-section">Home</a></li>
+					<li><a class="page-scroll" href="#about-section">About</a></li>
+					<li><a class="page-scroll" href="#projects-section">Projects</a></li>
+					<li><a class="page-scroll" href="#contact-section">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- welcome section -->
+		<div class="row">
+			<div class="col-xs-12 page-scroll" id="welcome-section">
+				<div class="parallax-background fixed-background welcome-wrapper"></div>
+			</div>
+		</div>
+		<!-- about section -->
+		<div class="row">
+			<div class="col-xs-12 page-scroll about-wrapper gradient-background fixed-background"
+			id="about-section">
+				<div class="col-xs-12">
+					<div class="header"></div>
+				</div>
+			</div>
+		</div>
+		<!-- projects section -->
+		<div class="row">
+			<div class="col-xs-12 page-scroll projects-wrapper" id="projects-section">
+				<div class="col-xs-12 col-md-6 project-background fixed-background">
+					<div class="col-xs-12 col-md-6 header left-project-height"></div>
+				</div>
+				<div class="col-xs-12 col-md-6" id="projects">
+					<article class="col-xs-12 projects background1 fixed-background">
+					</article>
+					<article class="col-xs-12 projects background2 fixed-background">
+					</article>
+					<article class="col-xs-12 projects background1 fixed-background">
+					</article>
+					<article class="col-xs-12 projects background2 fixed-background">
+					</article>
+				</div>
+			</div>
+		</div>
+		<!-- contact section -->
+		<div class="row">
+			<div class="col-xs-12 page-scroll preview1 fixed-background contact-wrapper" id="contact-section">
+				<div class="col-xs-12">
+					<div class="header"></div>
+					<div class="contact-info">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="lib/js/jquery-3.1.0.min.js"></script>
+	<script src="lib/js/bootstrap.min.js"></script>
+	<script src="lib/js/jquery.easing.min.js"></script>
+	<script src="lib/js/scrolling-nav.js"></script>
+	<script src="lib/js/fixed.js"></script>
+	<script src="https://use.fontawesome.com/dd95f0edce.js"></script>
+</body>
+</html>

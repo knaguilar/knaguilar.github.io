@@ -1,0 +1,313 @@
+/** {
+    outline: #00FF00 dotted thin;
+}*/
+
+body, html {
+    box-sizing: border-box;
+    font-size: 1em;
+    height: 100%;
+    width: 100%;
+    color: #B19C02;
+    font-family: 'Dosis', sans-serif;
+}
+
+body, .container-fluid {
+    position: relative;
+}
+
+h3, .header, .occupation {
+    font-family: 'Bad Script', cursive;
+    color: rgba(6,91,101,0.9);
+}
+
+h3 {
+    font-size: 2.25em;
+}
+
+/*remove left and right padding coming from bootstrap*/
+.col-xs-12 {
+    padding: 0;
+}
+
+.welcome-wrapper, .about-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*---------------------nav bar-------------------------------------------*/
+nav {
+    text-align: center;
+    background-color: #fff;
+    opacity: .8;
+}
+
+/*highlight link*/
+.nav > li > a {
+    color: #065B65;
+}
+
+.nav > li > a:focus {
+    background-color: transparent;
+}
+
+.nav > li > a:hover, .nav > li > a:active, .active {
+    background-color: #B8B8B8;
+}
+
+.navbar-toggle {
+    /*left or center menu button*/
+    float: none;
+    margin-left: 15px;
+}
+
+nav > ul {
+    padding-left: 0;
+    margin: 2%;
+}
+
+ul li {
+    display: inline;
+    font-size: 20px;
+}
+
+.navbar {
+    text-align: center;
+    min-height: 0;
+}
+
+/*identify burger icon*/
+.icon-bar {
+    background-color: rgba(6,91,101,1);
+}
+/*-------------------Welcome Section----------------------------------*/
+.welcome-wrapper {
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*nyc background image*/
+.parallax-background {
+    background-image: url('images/mobile/nyc-mobile.jpg');
+}
+
+.header, .occupation {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    opacity: .8;
+}
+
+.header {
+    font-size: 3.375em;
+}
+/*different size for occupation - smaller*/
+.occupation {
+    font-size: 1.5em;
+}
+/*-------------------About Section----------------------------------*/
+.about-wrapper {
+    flex-direction: row;
+    align-content: flex-start;
+    text-align: center;
+}
+
+.img-circle {
+    object-fit: cover;
+    width: 175px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.blurp {
+    padding: 5%;
+    color: #fff;
+}
+
+.gradient-background {
+    background: turquoise;
+ /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(6,91,101,0.9), rgba(114,18,68,0.9));
+ /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9));
+ /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9));
+ /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(6,91,101,0.9), rgba(114,18,68,0.9));
+ /*Standard*/
+    opacity: .9;
+}
+
+.fixed-background {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*----------------------Projects Section-------------------------------------*/
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.fixed-title {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    left: 0;
+    margin: 5% auto;
+    display: none;
+}
+
+.project-background {
+    background-image: url('images/mobile/project-mobile.jpg');
+    min-height: 100vh;
+    /*background-position: left;*/
+    /*opacity: .8;*/
+}
+
+.background1 {
+    background: #065B65;
+    min-height: 100vh;
+}
+
+.background1 > h3 {
+    color: #721244;
+}
+
+.background2 {
+    background: #721244;
+    min-height: 100vh;
+}
+
+.background2 > h3 {
+    color: #065B65;
+}
+
+.img-adjust {
+    margin: 0 auto;
+    /*height: 5%;*/
+}
+
+.projects {
+    padding: 5%;
+    text-align: center;
+    /*overflow: auto;*/
+    font-size: 18px;
+    min-height: 100vh;
+    /*either make the project window scrollable when text doesn't fit or make the height bigger and min-height: 100vh for laptops*/
+}
+
+.projects > .link {
+    background-color: #B19C02;
+    color: #065B65;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+/*-------------------------contact section---------------------------------*/
+.preview1 {
+    background-image: url("images/mobile/laptop-mobile.jpg");
+    height: 100vh;
+}
+
+.contact-info {
+    background-color: #fff;
+    color: rgba(6,91,101,0.9);
+    opacity: .9;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.contact-info > ul {
+    padding-left: 0;
+}
+
+.contact-info > ul > a {
+    padding: 2%;
+}
+/*-------------------------media queries section---------------------------------*/
+@media only screen and (min-width: 767px) {
+    .navbar {
+        padding: 0;
+    }
+    nav > ul {
+        margin: 1%;
+    }
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+
+    .parallax-background {
+        background-image: url('images/large/nyc.jpg');
+    }
+
+    .project-background {
+        background-image: url('images/large/project.jpg');
+    }
+
+.preview1 {
+    background-image: url("images/large/laptop.jpg");
+    }
+}
+
+/*for laptop screens*/
+@media only screen and (min-width: 992px) {
+    .header, .occupation {
+        width: 50%;
+    }
+
+    .fixed-title {
+        top: 40%;
+        right: 0;
+        left: -50%;
+        margin: 0 auto;
+    }
+
+    .img-circle {
+        width: 275px;
+        height: 250px;
+        margin-top: 10%;
+    }
+
+    .blurp {
+    padding: 0 5%;
+    }
+
+    .contact-info {
+        /*margin-top: 10%;*/
+        width: 50%;
+        /*padding: 5%;*/
+    }
+
+    .parallax-background {
+        background-image: url('images/extra/nyc.jpg');
+    }
+
+    .project-background {
+        background-image: url('images/extra/project.jpg');
+    }
+
+    .preview1 {
+        background-image: url("images/extra/laptop.jpg");
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    body, html {
+        font-size: 1.6em;
+    }
+
+    .img-circle {
+        height: 80%;
+        width: 80%;
+    }
+}
